@@ -1,0 +1,57 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	height: -webkit-fill-available;
+	background: #cdcdcd;
+}
+.my-profile-navigation {
+    position: fixed;
+    top: 25%;
+    left: 0;
+}
+.my-profile-page-section {
+    height: inherit;
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #fff;
+}
+.my-profile-navigation li {
+    border: 1px solid #3e419a;
+    padding: 15px 10px;
+    margin: 10px 0;
+    background: #3e419a;
+    color: #fff;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.5);
+    text-align: center;
+    cursor: pointer;
+    font-family: Felipa;
+}
+.my-profile-navigation li:hover {
+    background: #695c5c;
+    border-color: #695c5c;
+}
+.my-profile-navigation li:before {
+    font-family: fontawesome;
+    margin-right: 5px;
+}
+.my-profile-navigation li.home-nav:before {
+    content: '\f015';
+}
+.my-profile-navigation li.about-nav:before {
+    content: '\f05a';
+}
+.my-profile-navigation li.skill-nav:before {
+    content: '\f126';
+}
+.my-profile-navigation li.contact-nav:before {
+    content: '\f0e0';
+}
+.my-profile-page-section>h1 {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Dancing Script";
+}
