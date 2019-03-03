@@ -7,6 +7,7 @@
 body{
 	height: -webkit-fill-available;
 	background: #cdcdcd;
+    padding: 20px;
 }
 .my-profile-navigation {
     position: relative;
@@ -16,12 +17,13 @@ body{
 .my-profile-page-section {
     height: inherit;
     max-width: 1000px;
-    margin: 20px auto;
+    margin: 0 auto;
     background: #fff;
     box-sizing: border-box;
     padding: 25px;
     box-shadow: 0 0 10px rgba(0,0,0,0.4);
     overflow: hidden;
+    height: fit-content;
 }
 .my-profile-navigation li {
     display: inline-block;
@@ -170,13 +172,13 @@ span.my-profile-social-tooltip:before {
     display: inline-block;
 }
 .my-profile-general {
-	width: 58%;
-	float: left;
+	width: calc(100% - 180px);
+	float: right;
+    clear: right;
 }
 .my-profile-user-image{
 	border: 5px solid #cdcdcd;
     border-radius: 50%;
-	clear: left;
 	width: 150px;
 	height: 150px;
 	box-sizing: content-box;
@@ -214,14 +216,15 @@ span.my-profile-social-tooltip:before {
 
 .my-profile-working-section {
     overflow: hidden;
-    min-width: 700%;
+    min-width: 500%;
     position: relative;
     padding: 12px 0;
     transition: right .8s;
 }
 .my-profile-section-wrap {
     float: left;
-    width: 1000px;
+    width: 19%;
+    padding: 0 1%;
 }
 
 label.my-profile-sub-label {
@@ -229,7 +232,6 @@ label.my-profile-sub-label {
     margin: 10px 0;
     font-size: 20px;
     text-align: center;
-    border-top: 1px solid #3e419a;
     border-bottom: 1px solid #3e419a;
     padding: 10px 0;
     color: #3e419a;
@@ -246,4 +248,21 @@ label.my-profile-sub-label {
     padding: 10px 15px;
     margin: 0 5px;
     color: #fff;
+}
+
+@media screen and (max-width: 800px){
+    .my-profile-user-image{
+        display: block;
+        margin: 0 auto;
+    }
+    .my-profile-general{
+        float: unset;
+        display: block;
+        margin: 0 auto;
+        width: 90%;
+        text-align: center;
+    }
+    .my-profile-details{
+        margin: 15px 0;
+    }
 }

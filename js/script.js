@@ -20,5 +20,5 @@ jQuery(document).ready(function($){
 
 function aio_fe_switch_tabs(tab_no,$=jQuery){
 	var target = $('.my-profile-working-section');
-	target.css('right', (tab_no*$('.my-profile-section-wrap').width()) + 'px');
+	target.css('right', (tab_no*$('.my-profile-section-wrap').outerWidth()) + 'px');
 }
