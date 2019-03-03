@@ -5,9 +5,9 @@
 	padding: 0;
 }
 body{
-	height: -webkit-fill-available;
+	height: fit-content;
 	background: #cdcdcd;
-    padding: 20px;
+    padding: 20px 0;
 }
 .my-profile-navigation {
     position: relative;
@@ -15,7 +15,6 @@ body{
     height: 90px;
 }
 .my-profile-page-section {
-    height: inherit;
     max-width: 1000px;
     margin: 0 auto;
     background: #fff;
@@ -150,12 +149,13 @@ span.my-profile-social-tooltip:before {
     background: #20225b;
 }
 .my-profile-social-media-section li a:hover ~ span.my-profile-social-tooltip {
-	visibility: visible;
-	bottom: -40px;
+    visibility: visible;
+    bottom: -40px;
 }
 
 .my-profile-user-box {
     max-width: 700px;
+    width: 90%;
     margin: 0 auto;
     padding: 15px;
     box-shadow: 0 3px 10px rgba(0,0,0,0.4);
@@ -172,25 +172,25 @@ span.my-profile-social-tooltip:before {
     display: inline-block;
 }
 .my-profile-general {
-	width: calc(100% - 180px);
-	float: right;
+    width: calc(100% - 180px);
+    float: right;
     clear: right;
 }
 .my-profile-user-image{
-	border: 5px solid #cdcdcd;
+    border: 5px solid #cdcdcd;
     border-radius: 50%;
-	width: 150px;
-	height: 150px;
-	box-sizing: content-box;
+    width: 150px;
+    height: 150px;
+    box-sizing: content-box;
     overflow: hidden;
 }
 .my-profile-user-image .my-profile-image-holder{
-	background-image: url(../images/20171028131607.jpg);
-	background-size: cover;
-	background-position-x: -12px;
-	display: inline-block;
-	height: 100%;
-	width: 100%;
+    background-image: url(../images/20171028131607.jpg);
+    background-size: cover;
+    background-position-x: -12px;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
     transition: transform .5s;
 }
 .my-profile-user-image .my-profile-image-holder:hover {
@@ -214,6 +214,13 @@ span.my-profile-social-tooltip:before {
     margin: 5px 0;
 }
 
+.my-profile-outer-work-station {
+    display: block;
+    width: 98%;
+    overflow: hidden;
+    margin: 0 auto;
+    height: -webkit-fill-available;
+}
 .my-profile-working-section {
     overflow: hidden;
     min-width: 500%;
@@ -264,5 +271,18 @@ label.my-profile-sub-label {
     }
     .my-profile-details{
         margin: 15px 0;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .my-profile-navigation{
+        height: unset;
+    }
+    .my-profile-navigation li{
+        padding: 10px 7px;
+    }
+    .my-profile-navigation li.active,
+    .my-profile-navigation li:hover{
+        padding: 15px;
     }
 }
