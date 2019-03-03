@@ -219,7 +219,7 @@ span.my-profile-social-tooltip:before {
     width: 98%;
     overflow: hidden;
     margin: 0 auto;
-    height: -webkit-fill-available;
+    height: auto;
 }
 .my-profile-working-section {
     overflow: hidden;
