@@ -159,6 +159,7 @@ span.my-profile-social-tooltip:before {
     margin: 0 auto;
     padding: 15px;
     box-shadow: 0 3px 10px rgba(0,0,0,0.4);
+    background-color: #eaeaea;
 }
 .my-profile-user-box .my-profile-label {
     transform: translateX(-25px);
@@ -177,7 +178,7 @@ span.my-profile-social-tooltip:before {
     clear: right;
 }
 .my-profile-user-image{
-    border: 5px solid #cdcdcd;
+    border: 5px solid #3e419a;
     border-radius: 50%;
     width: 150px;
     height: 150px;
@@ -248,12 +249,13 @@ label.my-profile-sub-label {
 }
 .my-profile-skill-sets .my-profile-skill-group {
     margin: 20px 0;
+    text-align: center;
 }
 .my-profile-skill-sets .my-profile-skill-group .my-profile-skill-ind {
     display: inline-block;
     background: #3e419a;
     padding: 10px 15px;
-    margin: 0 5px;
+    margin: 5px;
     color: #fff;
 }
 
